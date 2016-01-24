@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YFXibDemoViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAr-Gv-FcU" customClass="YFDemoComponent">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <color key="backgroundColor" red="0.3411764706" green="0.71372549019999998" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="autoTrans.png"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpG-Ee-DgV" customClass="YFDemoComponent">
+                    <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.16849644874434647" blue="0.81218204142561545" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="autoTrans.png"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLc-il-aRB" customClass="YFDemoComponent">
+                    <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.42567112029999998" blue="0.53651780940000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="autoTrans.png"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yAr-Gv-FcU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8PD-kM-FdF"/>
+                <constraint firstItem="GLc-il-aRB" firstAttribute="top" secondItem="tpG-Ee-DgV" secondAttribute="bottom" id="9og-N2-Q0o"/>
+                <constraint firstAttribute="trailing" secondItem="GLc-il-aRB" secondAttribute="trailing" id="AKK-zJ-zwF"/>
+                <constraint firstItem="yAr-Gv-FcU" firstAttribute="bottom" secondItem="tpG-Ee-DgV" secondAttribute="top" id="LoQ-PW-bJM"/>
+                <constraint firstAttribute="trailing" secondItem="yAr-Gv-FcU" secondAttribute="trailing" id="Maw-JQ-HaX"/>
+                <constraint firstItem="tpG-Ee-DgV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ONv-yg-Vs3"/>
+                <constraint firstAttribute="trailing" secondItem="tpG-Ee-DgV" secondAttribute="trailing" id="QWx-ed-5th"/>
+                <constraint firstItem="yAr-Gv-FcU" firstAttribute="height" secondItem="GLc-il-aRB" secondAttribute="height" id="aWA-fR-Wt5"/>
+                <constraint firstItem="yAr-Gv-FcU" firstAttribute="height" secondItem="tpG-Ee-DgV" secondAttribute="height" id="dG7-ry-9kQ"/>
+                <constraint firstItem="yAr-Gv-FcU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jCp-fU-ENO"/>
+                <constraint firstAttribute="bottom" secondItem="GLc-il-aRB" secondAttribute="bottom" id="mSi-Ew-OqO"/>
+                <constraint firstItem="GLc-il-aRB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sBg-hh-g5h"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="autoTrans.png" width="426" height="324"/>
+    </resources>
+</document>

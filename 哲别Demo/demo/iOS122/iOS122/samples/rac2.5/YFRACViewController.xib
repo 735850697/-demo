@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YFRACViewController">
+            <connections>
+                <outlet property="button" destination="1ak-VC-nEq" id="elV-Sr-lcJ"/>
+                <outlet property="imageView" destination="1dJ-ag-Xx0" id="xuc-Mh-p4V"/>
+                <outlet property="loginButton" destination="tZ9-DO-d7G" id="ThN-5u-PiT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ak-VC-nEq">
+                    <rect key="frame" x="255" y="285" width="90" height="30"/>
+                    <state key="normal" title="按钮点击事件">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZ9-DO-d7G">
+                    <rect key="frame" x="255" y="335" width="90" height="30"/>
+                    <state key="normal" title="异步网络请求">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1dJ-ag-Xx0">
+                    <rect key="frame" x="150" y="150" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.1333333333" green="0.67450980390000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Dk0-s4-X9n"/>
+                        <constraint firstAttribute="height" constant="100" id="f5e-ab-xP8"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="1ak-VC-nEq" secondAttribute="centerX" id="SWN-MD-oVg"/>
+                <constraint firstAttribute="centerY" secondItem="tZ9-DO-d7G" secondAttribute="centerY" constant="-50" id="fwM-B5-M4C"/>
+                <constraint firstAttribute="centerY" secondItem="1ak-VC-nEq" secondAttribute="centerY" id="hII-a0-O3h"/>
+                <constraint firstAttribute="centerX" secondItem="tZ9-DO-d7G" secondAttribute="centerX" id="npa-Nv-f0L"/>
+                <constraint firstAttribute="centerY" secondItem="1dJ-ag-Xx0" secondAttribute="centerY" constant="100" id="oUp-gX-5sE"/>
+                <constraint firstAttribute="centerX" secondItem="1dJ-ag-Xx0" secondAttribute="centerX" constant="100" id="xCg-9D-eMj"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
